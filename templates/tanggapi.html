@@ -1,0 +1,16 @@
+<!-- Form tanggapan admin -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tanggapi Pengaduan</title>
+</head>
+<body>
+    <h1>Beri Tanggapan</h1>
+    <p><strong>Nama:</strong> {{ pengaduan[1] }}</p>
+    <p><strong>Isi:</strong> {{ pengaduan[2] }}</p>
+    <form method="post">
+        Tanggapan: <textarea name="tanggapan" required></textarea><br>
+        <input type="submit" value="Kirim Tanggapan">
+    </form>
+</body>
+</html>

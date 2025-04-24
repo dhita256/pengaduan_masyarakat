@@ -1,0 +1,26 @@
+<!-- Dashboard admin: lihat, hapus, dan tanggapi pengaduan -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Admin</title>
+</head>
+<body>
+    <h1>Dashboard Admin</h1>
+    <table border="1">
+        <tr>
+            <th>Nama</th><th>Isi</th><th>Tanggapan</th><th>Aksi</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[6] if row[6] else 'Belum ditanggapi' }}</td>
+            <td>
+                <a href="/admin/tanggapi/{{ row[0] }}">Tanggapi</a> |
+                <a href="/admin/delete/{{ row[0] }}">Hapus</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
