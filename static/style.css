@@ -1,0 +1,13 @@
+body{
+    background-color: #e0e0e0;
+}
+
+nav{
+    background-color: #8bc34a;
+}
+
+.card{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 3%;
+}
